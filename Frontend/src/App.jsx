@@ -1,14 +1,33 @@
 import React from 'react'
-import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Navbar from './layouts/Navbar'
+import Footer from './layouts/Footer'
+import Home from './views/Home'
+import AllNotes from './views/AllNotes'
+import AddNote from './views/AddNote'
+import About from './views/About'
+import Contact from './views/Contact'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
     <>
-      {/* Jsx which is not similar to html */}
-      <h1 className='text-warning'>Bootstrap CDN</h1>
-      Navbar
+      <Navbar />
+      {/* define routes */}
+      <Routes>
+        {/* home route */}
+        <Route path='/' element={<Home/>}/>
+        {/* notes */}
+        <Route path='/notes' element={<AllNotes />} />
+        {/* add note */}
+        <Route path='/addnote' element={<AddNote />} />
+        {/* about */}
+        <Route path='/about' element={<About />} />
+        {/* contact */}
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      {/* footer */}
+      <Footer/>
     </>
   )
 }
