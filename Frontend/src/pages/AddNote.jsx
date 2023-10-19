@@ -1,8 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-import BASE_URL from "../constants/secretes/baseUrl"
-import addNoteApiService from "../services/apiServices/notesApis/addNoteApi";
-
+import BASE_URL from "../../constants/secrets/baseUrl"
+import addNoteApiService from "../../services/apiServices/notesApis/addNoteApi";
 
 
 const AddNote = () => {

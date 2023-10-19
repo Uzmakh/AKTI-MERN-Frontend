@@ -1,2 +1,0 @@
-# AKTI-MERN-Frontend
- 
