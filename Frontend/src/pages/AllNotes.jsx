@@ -3,7 +3,7 @@ import getAllNotesApiService from "../services/apiServices/notesApis/getAllNotes
 import axios from "axios";
 import deleteNoteByIdApiService from "../services/apiServices/notesApis/deleteNoteApiService";
 import EditNote from "../views/EditNote";
-import UpdateNoteByIdApiService from "../services/apiServices/notesApis/UpdateNoteByIdApi";
+import updateNoteByIdApiService from "../services/apiServices/notesApis/updateNoteByIdApi";
 import { useNavigate } from "react-router-dom";
 
 const Notes = () => {
@@ -145,3 +145,5 @@ const Notes = () => {
 };
 
 export default Notes;
+  
+

@@ -7,12 +7,14 @@ import AllNotes from './pages/AllNotes'
 import AddNote from './pages/AddNote'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import UpdateNote from './pages/UpdateNote'
+
 
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Navbar title="Mern Course" />
       {/* define routes */}
       <Routes>
         {/* home route */}
