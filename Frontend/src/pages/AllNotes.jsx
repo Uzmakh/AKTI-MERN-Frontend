@@ -29,8 +29,7 @@ const Notes = () => {
           const updatedNotes = notes.filter((note) => note._id !== noteId);
           // Set the new array as the state
           setNotes(updatedNotes);
-
-        })
+ })
         .catch((error) => {
           console.error("Error deleting note:", error);
         });

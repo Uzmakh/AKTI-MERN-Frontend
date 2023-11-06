@@ -72,7 +72,7 @@ const UpdateNote = () => {
         try {
             const response = updateNoteByIdApiService(noteId, updatedNoteData)
                 .then((data) => {
-                    // navigate back to all notes page onsuccessful updatation
+                    // navigate back to all notes page onsuccessful updation
                     if (data.title === updatedNoteData.title) {
                         navigateToNotes(navigate);
                     }

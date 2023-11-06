@@ -8,8 +8,8 @@ import AddNote from './pages/AddNote'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import UpdateNote from './pages/UpdateNote'
-
-
+import Register from './pages/auth/Register'
+import Login from './pages/auth/Login'
 
 const App = () => {
   return (
@@ -27,6 +27,13 @@ const App = () => {
         <Route path='/about' element={<About />} />
         {/* contact */}
         <Route path='/contact' element={<Contact />} />
+        {/* dynamic update note */}
+        <Route path="notes/update/:noteId" element={<UpdateNote />} />
+        {/* auth routings */}
+        {/* register route */}
+        <Route path='/auth/register' element={<Register />} />
+        {/* login route */}
+        <Route path='/auth/login' element={<Login />} />
       </Routes>
       {/* footer */}
       <Footer/>
